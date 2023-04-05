@@ -51,26 +51,4 @@ function add(a, b) {
   return sum.join('')
 }
 
-// function add(a, a) {
-//   const aLength = a.length
-//   const bLength = b.length
-//   const maxlength = Math.max(aLength, bLength)
-
-//   let increment = 0,
-//     sum = ''
-
-//   for (let i = 1; i <= maxlength; i++) {
-//     let a = +a.charAt(aLength - i)
-//     let b = +b.charAt(bLength - i)
-
-//     let t = increment + a + b
-//     increment = (t / 10) | 0
-//     t %= 10
-
-//     sum = i === maxlength && increment ? increment * 10 + t + sum : t + sum
-//   }
-
-//   return sum
-// }
-
 console.log(add(a, b))
