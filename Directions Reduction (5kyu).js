@@ -1,3 +1,5 @@
+// ----- Directions Reduction (5kyu) -----
+
 // Once upon a time, on a way through the old wild mountainous west,…
 // … a man was given directions to go from one point to another. The directions were "NORTH", "SOUTH", "WEST", "EAST". Clearly "NORTH" and "SOUTH" are opposite, "WEST" and "EAST" too.
 
@@ -60,14 +62,5 @@ function dirReduc(arr) {
 
   return arr
 }
-
-// function dirReduc(arr) {
-//   const string = arr.join(''),
-//     directionsOptions = /NORTHSOUTH|EASTWEST|SOUTHNORTH|WESTEAST/
-
-//   while (directionsOptions.test(string)) string = string.replace(directionsOptions, '')
-
-//   return string.match(/(NORTH|SOUTH|EAST|WEST)/g) ?? []
-// }
 
 console.log(dirReduc(arr))
