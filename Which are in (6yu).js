@@ -68,26 +68,6 @@ function inArray(array1, array2) {
     })
   })
 
-  // Ручная сортировка массива r по возрастанию
-  let temp
-  for (let j = 0; j < r.length - 1; j++) {
-    for (let i = 0; i < r.length - j - 1; i++) {
-      if (r[i] > r[i + 1]) {
-        temp = r[i + 1]
-        r[i + 1] = r[i]
-        r[i] = temp
-      }
-    }
-  }
-  // Ручная сортировка массива r по возрастанию. Конец
   return r.sort()
 }
 console.log(inArray(a1, a2))
-
-function inArray2(array1, array2) {
-  return array1
-    .filter(itemA1 => array2.find(itemA2 => itemA2.includes(itemA1)))
-    .sort()
-}
-
-console.log(inArray2(a1, a2))
